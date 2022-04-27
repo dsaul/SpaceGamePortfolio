@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<spacescapelayers>
+	<layer>
+		<destBlendFactor>one</destBlendFactor>
+		<ditherAmount>0.03</ditherAmount>
+		<gain>0.6</gain>
+		<innerColor>0.176471 0.356863 0.529412 1</innerColor>
+		<lacunarity>2.25</lacunarity>
+		<name>SpacescapeLayer2</name>
+		<noiseType>ridged</noiseType>
+		<octaves>7</octaves>
+		<offset>1</offset>
+		<outerColor>0 0 0 1</outerColor>
+		<powerAmount>1</powerAmount>
+		<previewTextureSize>128</previewTextureSize>
+		<scale>1</scale>
+		<seed>2</seed>
+		<shelfAmount>0.8</shelfAmount>
+		<sourceBlendFactor>one</sourceBlendFactor>
+		<type>noise</type>
+	</layer>
+	<layer>
+		<destBlendFactor>one</destBlendFactor>
+		<ditherAmount>0.03</ditherAmount>
+		<gain>0.6</gain>
+		<innerColor>0.337255 0.109804 0.176471 1</innerColor>
+		<lacunarity>3</lacunarity>
+		<name>SpacescapeLayer1</name>
+		<noiseType>ridged</noiseType>
+		<octaves>7</octaves>
+		<offset>1</offset>
+		<outerColor>0 0 0 1</outerColor>
+		<powerAmount>0.3</powerAmount>
+		<previewTextureSize>256</previewTextureSize>
+		<scale>0.5</scale>
+		<seed>2</seed>
+		<shelfAmount>0.5</shelfAmount>
+		<sourceBlendFactor>one</sourceBlendFactor>
+		<type>noise</type>
+	</layer>
+	<layer>
+		<destBlendFactor>one</destBlendFactor>
+		<farColor>0 0 0 1</farColor>
+		<maskEnabled>false</maskEnabled>
+		<maskGain>0.5</maskGain>
+		<maskLacunarity>2</maskLacunarity>
+		<maskNoiseType>fbm</maskNoiseType>
+		<maskOctaves>1</maskOctaves>
+		<maskOffset>1</maskOffset>
+		<maskPower>1</maskPower>
+		<maskScale>1</maskScale>
+		<maskSeed>1</maskSeed>
+		<maskThreshold>0</maskThreshold>
+		<name>SpacescapeLayer0</name>
+		<nearColor>1 1 1 1</nearColor>
+		<numPoints>1000</numPoints>
+		<pointSize>1</pointSize>
+		<seed>0</seed>
+		<sourceBlendFactor>one</sourceBlendFactor>
+		<type>points</type>
+	</layer>
+</spacescapelayers>

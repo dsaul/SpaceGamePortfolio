@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: a3be6c35ac2f4f84493c27b814493f6f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

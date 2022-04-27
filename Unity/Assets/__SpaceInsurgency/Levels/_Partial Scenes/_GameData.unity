@@ -1,0 +1,6601 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
+  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
+  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 5
+  m_GIWorkflowMode: 0
+  m_LightmapsMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 3
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AOMaxDistance: 1
+    m_Padding: 2
+    m_CompAOExponent: 0
+    m_LightmapParameters: {fileID: 0}
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherRayCount: 1024
+  m_LightmapSnapshot: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: .166666672
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &56516406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 56516407}
+  - 114: {fileID: 56516408}
+  m_Layer: 0
+  m_Name: Engineer Energy Cost Decrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56516407
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56516406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 8
+--- !u!114 &56516408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56516406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kEngineerEnergyCostDecrease
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 64315396453303d408468c892e6dfac6, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Engineer Energy Cost Decrease
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: .800000012
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Engineer Energy Cost Decrease
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &58717791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 58717792}
+  - 114: {fileID: 58717793}
+  m_Layer: 0
+  m_Name: Interceptor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58717792
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58717791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 7
+--- !u!114 &58717793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58717791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionInterceptor
+  m_BodyPrefab: {fileID: 100008, guid: fbc62f447334ad44a8fc4ab3b67b6ee0, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Interceptor
+  m_ShortDisplayName: Interceptor
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &77768964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 77768965}
+  - 114: {fileID: 77768966}
+  m_Layer: 0
+  m_Name: Ion Cannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77768965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77768964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 7
+--- !u!114 &77768966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77768964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8416dece5195f3d44bd5679afb8bb113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponIonCannon
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 285034a49d5baca49bf648570235abce, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: d70895452eaf5a34f9d96839767096b7, type: 3}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 15
+  m_Description: A beam of ionizing energy that should slows and disables any electrical
+    system it touches.
+  m_EnergyCost: 30
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 5
+  m_FireMinRange: 1
+  m_FriendlyName: Ion Cannon
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 3.5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 1
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &88562764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 88562765}
+  m_Layer: 0
+  m_Name: Items Classes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &88562765
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88562764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 336737481}
+  - {fileID: 1302997731}
+  - {fileID: 1001629866}
+  - {fileID: 1446134744}
+  - {fileID: 159749659}
+  - {fileID: 453032134}
+  - {fileID: 1255250805}
+  - {fileID: 523761575}
+  - {fileID: 56516407}
+  - {fileID: 1083084945}
+  m_Father: {fileID: 1918568127}
+  m_RootOrder: 3
+--- !u!1 &145137013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 145137014}
+  m_Layer: 0
+  m_Name: Items Cargo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &145137014
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145137013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1849351330}
+  m_Father: {fileID: 1918568127}
+  m_RootOrder: 0
+--- !u!1 &159749658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 159749659}
+  - 114: {fileID: 159749660}
+  m_Layer: 0
+  m_Name: Merchant Price Decrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159749659
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159749658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 4
+--- !u!114 &159749660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159749658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kMerchantPriceDecrease
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 16c132bfac926804eafd43e6d4896b1d, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Merchant Price Decrease
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Merchant Price Decrease
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: .800000012
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &166251170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 166251171}
+  - 114: {fileID: 166251172}
+  m_Layer: 0
+  m_Name: Mining Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166251171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166251170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 8
+--- !u!114 &166251172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166251170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionMiningShip
+  m_BodyPrefab: {fileID: 100004, guid: e86827ddca1dc3645923914295e4d4d8, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Mining Ship
+  m_ShortDisplayName: Mining
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &184692434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 184692435}
+  - 114: {fileID: 184692436}
+  m_Layer: 0
+  m_Name: Fighter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184692435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184692434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 3
+--- !u!114 &184692436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184692434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionFighter
+  m_BodyPrefab: {fileID: 100008, guid: 34a99ff11b7292d4d89a7a65ca508553, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Fighter
+  m_ShortDisplayName: Fighter
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 50
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &278053867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 278053868}
+  m_Layer: 0
+  m_Name: Items Weapons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &278053868
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278053867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 971985583}
+  - {fileID: 1790297688}
+  - {fileID: 473777697}
+  - {fileID: 1447141051}
+  - {fileID: 467883200}
+  - {fileID: 1016966703}
+  - {fileID: 1946275539}
+  - {fileID: 77768965}
+  - {fileID: 1027311617}
+  - {fileID: 1861845427}
+  - {fileID: 2129296296}
+  - {fileID: 1153123589}
+  m_Father: {fileID: 1918568127}
+  m_RootOrder: 1
+--- !u!1 &304790774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 304790775}
+  - 114: {fileID: 304790776}
+  m_Layer: 0
+  m_Name: FTL Token
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &304790775
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304790774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 16
+--- !u!114 &304790776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304790774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionFTLToken
+  m_BodyPrefab: {fileID: 140900, guid: 6c5ef6141cda3e94992c70aa4cf4bab8, type: 2}
+  m_DefaultSensorRange: 10
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: FTL Token
+  m_DisplayName: FTL Token
+  m_ShortDisplayName: FTL Token
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 200
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 9999999
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &315569839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 315569840}
+  - 114: {fileID: 315569841}
+  m_Layer: 0
+  m_Name: Engine Speed Increase (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &315569840
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315569839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 0
+--- !u!114 &315569841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315569839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationEngineSpeedIncreaseSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: f7abc6a22d3c0bf43bdeb42f07905f27, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Engine Speed Increase (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Engine Speed Increase (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 10
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 1
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &333231361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 333231362}
+  - 114: {fileID: 333231363}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333231362
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333231361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 3
+--- !u!114 &333231363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333231361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionPlayer
+  m_DisplayName: Player
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 1
+  m_PlayerReputationKey: faction.player.standing
+  m_DefaultReputation: 10000
+  m_GreatRelations: []
+  m_GoodRelations: []
+  m_PoorRelations: []
+  m_TerribleRelations: []
+--- !u!1 &336737480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 336737481}
+  - 114: {fileID: 336737482}
+  m_Layer: 0
+  m_Name: Soldier Weapons Access
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336737481
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336737480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 0
+--- !u!114 &336737482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336737480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kClassSoldierWeaponsAccess
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 2723c5fccfea8224da7ef01df7c76eb8, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Soldier Weapons Access
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Soldier Weapons Access
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &338034982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 338034983}
+  - 114: {fileID: 338034984}
+  m_Layer: 0
+  m_Name: Pirate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338034983
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338034982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 9
+--- !u!114 &338034984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338034982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionPirate
+  m_BodyPrefab: {fileID: 100008, guid: 21bb1784f39eb7a46b68c11d48368bf0, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Pirate
+  m_ShortDisplayName: Pirate
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &422610225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422610226}
+  - 114: {fileID: 422610227}
+  m_Layer: 0
+  m_Name: Sensor Boey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422610226
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422610225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 15
+--- !u!114 &422610227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422610225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionSensorBoey
+  m_BodyPrefab: {fileID: 100002, guid: 3238835b690bced4e96bb49c350746a2, type: 2}
+  m_DefaultSensorRange: 30
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Sensor Boey
+  m_ShortDisplayName: SensorBot
+  m_HealthMaxBase: 10
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 300
+  m_EnergyRechargeBase: 50
+  m_ShieldMaxBase: 500
+  m_ShieldRechargeBase: 10
+  m_WeightMaxBase: 0
+  m_WeaponSlots: 0
+  m_MoveSpeedBase: 0
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &453032133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 453032134}
+  - 114: {fileID: 453032135}
+  m_Layer: 0
+  m_Name: Merchant Income Per Second
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453032134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453032133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 5
+--- !u!114 &453032135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453032133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kMerchantIncomePerSecond
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 16c132bfac926804eafd43e6d4896b1d, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: .5
+  m_Damage: 0
+  m_Description: Merchant Income Per Second
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Merchant Income Per Second
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &463407793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463407794}
+  - 114: {fileID: 463407795}
+  m_Layer: 0
+  m_Name: Shield Recharge Rate (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &463407794
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463407793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 1
+--- !u!114 &463407795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463407793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationShieldRechargeRateSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Shield Recharge Rate (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Shield Recharge Rate (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 10
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 1
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &467883199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 467883200}
+  - 114: {fileID: 467883201}
+  m_Layer: 0
+  m_Name: Railgun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467883200
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467883199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 4
+--- !u!114 &467883201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467883199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9396d6cc332637b44aba4dc7cac2e576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponRailgun
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 7043e901362d5ad40b416f0d463d8e9b, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: 874a8fadc13f0f74397040df756553e8, type: 3}
+  m_AreaOfEffectRange: .100000001
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 150
+  m_Description: Nothing beats a virtualy instant shard of metal flying through space
+    to wreck havoc on systems.
+  m_EnergyCost: 20
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 100
+  m_FireMinRange: 3
+  m_FriendlyName: Railgun
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 20
+  m_OrbitMinRange: 10
+  m_ProjectileLifetime: 180
+  m_ProjectileSpeed: 20
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .100000001
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 317a0a54645b36144bd9ae38de292a29, type: 3}
+  m_ProjectilePrefab: {fileID: 100000, guid: 3698f33d534ea4d41a718035ee197949, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &468809793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 468809794}
+  - 114: {fileID: 468809795}
+  m_Layer: 0
+  m_Name: Energy Capacity Increase (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468809794
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468809793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 4
+--- !u!114 &468809795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468809793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationEnergyCapacityIncreaseSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: 88188a2afcef3794c8658d8f1619ab43, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Energy Capacity Increase (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Energy Capacity Increase (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 50
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 1
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &473777696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 473777697}
+  - 114: {fileID: 473777698}
+  m_Layer: 0
+  m_Name: Heavy Blaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473777697
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473777696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 2
+--- !u!114 &473777698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473777696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 022a6d9eacf5e39428ff83bbd60a261d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponHeavyBlaster
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: b1e6dff3a64eff54fb6fa5d740ac8c8c, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: ef070f17a587a644b97da44e66ab2376, type: 3}
+  m_AreaOfEffectRange: 2
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 15
+  m_Description: Heavy Blaster
+  m_EnergyCost: 20
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 100
+  m_FireMinRange: 2
+  m_FriendlyName: Heavy Blaster
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 2
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 30
+  m_OrbitMinRange: 15
+  m_ProjectileLifetime: 30
+  m_ProjectileSpeed: 10
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: e4e02a5b14172034db56103f5dacb2da, type: 3}
+  m_ProjectilePrefab: {fileID: 100006, guid: 354564bf1c58e2f4aa986437b7953a1e, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &514051203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 514051204}
+  - 114: {fileID: 514051205}
+  m_Layer: 0
+  m_Name: Wolf 359
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514051204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514051203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1633504887}
+  m_RootOrder: 2
+--- !u!114 &514051205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514051203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89666f6d3c4bb524fa59e82a4deb4c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPlanetarySystemWolf359
+  m_SceneName: Level - Wolf 359
+  m_DisplayName: Wolf 359
+  m_HomeFaction: {fileID: 1196158426}
+--- !u!1 &523761574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 523761575}
+  - 114: {fileID: 523761576}
+  m_Layer: 0
+  m_Name: Governor Easier Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523761575
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523761574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 7
+--- !u!114 &523761576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523761574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kGovernorEasierDialogue
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: a2e8a546a6b2c334ab2f2c6646095a41, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Governor Easier Dialogue
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Governor Easier Dialogue
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &612697024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 612697025}
+  - 114: {fileID: 612697026}
+  m_Layer: 0
+  m_Name: Shield Capacity Increase (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &612697025
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612697024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 2
+--- !u!114 &612697026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612697024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationShieldCapacityIncreaseSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Shield Capacity Increase (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Shield Capacity Increase (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 50
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 1
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &668409217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 668409218}
+  - 114: {fileID: 668409219}
+  m_Layer: 0
+  m_Name: Gas Harvester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &668409218
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668409217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 5
+--- !u!114 &668409219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668409217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionGasHarvester
+  m_BodyPrefab: {fileID: 100008, guid: 218772c0a72f5a842b7864441180750c, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Gas Harvester
+  m_ShortDisplayName: Gas H.
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &750743500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 750743501}
+  - 114: {fileID: 750743502}
+  m_Layer: 0
+  m_Name: Heavy Fighter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750743501
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750743500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 6
+--- !u!114 &750743502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750743500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionHeavyFighter
+  m_BodyPrefab: {fileID: 100004, guid: dcc721a079b98594890c4d76a50ff794, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Heavy Fighter
+  m_ShortDisplayName: Hvy Fighter
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &833933046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 833933047}
+  - 114: {fileID: 833933048}
+  m_Layer: 0
+  m_Name: Dropship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &833933047
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833933046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 2
+--- !u!114 &833933048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833933046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionDropship
+  m_BodyPrefab: {fileID: 100004, guid: 07ee0cb91f90d414c9af59e78ea418f1, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Dropship
+  m_ShortDisplayName: Dropship
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &858122498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 858122499}
+  - 114: {fileID: 858122500}
+  m_Layer: 0
+  m_Name: New Iceland
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &858122499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858122498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 2
+--- !u!114 &858122500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858122498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionNewIceland
+  m_DisplayName: New Iceland
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.newiceland.standing
+  m_DefaultReputation: 0
+  m_GreatRelations:
+  - {fileID: 2132021747}
+  m_GoodRelations: []
+  m_PoorRelations:
+  - {fileID: 1564297842}
+  m_TerribleRelations: []
+--- !u!1 &971985582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 971985583}
+  - 114: {fileID: 971985584}
+  m_Layer: 0
+  m_Name: Light Blaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &971985583
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971985582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 0
+--- !u!114 &971985584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971985582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51413e050f7d674da49fb69a78ca1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponLightBlaster
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 659b5cfaa940f564286c95fcd84a5fd5, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: db1e5994e69975c4faf22381d8c52368, type: 3}
+  m_AreaOfEffectRange: .5
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 10
+  m_Description: Light Blaster
+  m_EnergyCost: 10
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 15
+  m_FireMinRange: .5
+  m_FriendlyName: Light Blaster
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: .5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 10
+  m_OrbitMinRange: 2
+  m_ProjectileLifetime: 5
+  m_ProjectileSpeed: 30
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 29259a33130bafb4fb56adb135ed9dff, type: 3}
+  m_ProjectilePrefab: {fileID: 100004, guid: 9d447163ceb35164d87b53a0fa23267a, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &992386432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 992386433}
+  - 114: {fileID: 992386434}
+  m_Layer: 0
+  m_Name: '[Game Data]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992386433
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992386432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1326719922}
+  - {fileID: 1633504887}
+  - {fileID: 1690411222}
+  - {fileID: 1353590636}
+  - {fileID: 1918568127}
+  - {fileID: 1591480035}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &992386434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 992386432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 755464980, guid: 6711b7df1158d83478abfae545ad8bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1001629865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1001629866}
+  - 114: {fileID: 1001629867}
+  m_Layer: 0
+  m_Name: Pilot Engine Speed Increase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001629866
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001629865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 2
+--- !u!114 &1001629867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001629865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPilotEngineSpeedIncrease
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 8acc0fc29e73fa94c93a54772689ac79, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Pilot Engine Speed Increase
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Pilot Engine Speed Increase
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 10
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &1014789556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1014789557}
+  - 114: {fileID: 1014789558}
+  m_Layer: 0
+  m_Name: Energy Recharge Rate (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1014789557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014789556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 3
+--- !u!114 &1014789558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014789556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationEnergyRechargeRateSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: 88188a2afcef3794c8658d8f1619ab43, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Energy Recharge Rate (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 10
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Energy Recharge Rate (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 1
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1016966702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1016966703}
+  - 114: {fileID: 1016966704}
+  m_Layer: 0
+  m_Name: Laser Bolt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016966703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016966702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 5
+--- !u!114 &1016966704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1016966702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8d90f75cfc1484294150d591e6e3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponLaserBolt
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 41d1941b4003bb042b5b8cb7ba2cd17b, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: e42389bc015a06a4ead36de8da5f9cdc, type: 3}
+  m_AreaOfEffectRange: .5
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 8
+  m_Description: Pew pew.
+  m_EnergyCost: 1
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 30
+  m_FireMinRange: 1
+  m_FriendlyName: Laser Bolt
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: .25
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 15
+  m_OrbitMinRange: 13
+  m_ProjectileLifetime: 5
+  m_ProjectileSpeed: 40
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 8acc3a66fd56dcc46b110c7a0d3213e4, type: 3}
+  m_ImpactPrefab: {fileID: 100002, guid: 99e8d337e1b23f346a1999fd18fd19f4, type: 2}
+  m_ProjectilePrefab: {fileID: 100004, guid: be392f40e70f0c44cb6119f9262df6fd, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &1027311616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1027311617}
+  - 114: {fileID: 1027311618}
+  m_Layer: 0
+  m_Name: Hail Chain Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1027311617
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027311616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 8
+--- !u!114 &1027311618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027311616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed439a71fe3c3342aea742df510ed49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponHailChainGun
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 5fe3bea3c74a53d499395cf04dbae51a, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: af30530b87f5ac043b6be6d46406bdc8, type: 3}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: This automated system attempts to lock on to hostile projectiles
+    and shoot them out of the sky.
+  m_EnergyCost: .0500000007
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 60
+  m_FireMinRange: 0
+  m_FriendlyName: Hail Chain Gun
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: .5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 4
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1083084944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1083084945}
+  - 114: {fileID: 1083084946}
+  m_Layer: 0
+  m_Name: Engineer Repair in FTL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083084945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083084944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 9
+--- !u!114 &1083084946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083084944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kEngineerRepairinFTL
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 64315396453303d408468c892e6dfac6, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Engineer Repair in FTL
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Engineer Repair in FTL
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &1088510001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1088510002}
+  - 114: {fileID: 1088510003}
+  m_Layer: 0
+  m_Name: Sensor Range Increase (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088510002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088510001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 7
+--- !u!114 &1088510003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088510001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationSensorRangeIncreaseSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: 5c0c31cf1f02a5e45936087f791ab887, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Sensor Range Increase (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Sensor Range Increase (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 10
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 1
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1123224287
+GameObject:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1123224289}
+  - 114: {fileID: 1123224288}
+  m_Layer: 0
+  m_Name: InspectorBreadcrumbs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1123224288
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123224287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1d283b8bb753941a0e3aefd4cea2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locked: 0
+  CurrentSelection:
+    OReference: {fileID: 0}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  Back:
+  - OReference: {fileID: 612697024}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1014789556}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 468809793}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1745318871}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1660917861}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1088510001}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 88562764}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 336737480}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1302997730}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1001629865}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1446134743}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 159749658}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 453032133}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1255250804}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 523761574}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 56516406}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1083084944}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1399841505}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 145137013}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1849351329}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: 45205a121bd765b4db0ac92f00cbbdcb, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 145137013}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1849351329}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: 046401ec1b1ddf74f9eb9f0c8ee5a9a4, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1399841505}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 971985582}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: 264835eab647e7649b19e24696c25bce, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1790297687}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: da7a05e46fd1a74419d2d36eeddd82fc, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: abb554dc58649704480f8ba5f4c8dc87, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: b1e6dff3a64eff54fb6fa5d740ac8c8c, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 2800000, guid: 3b97bbc686a83ac49bcd28400fe54387, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 473777696}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 1447141050}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 11500000, guid: 5cb175d79822f9c4eb752622310873f7, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 11500000, guid: 90f57d4ad737baa4dac2f491b5ae9bc7, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 11500000, guid: 800bf611c3f55de4db9bf9f9e712278c, type: 3}
+    OType: 0
+    CPosition: {x: 498.8172, y: 372.802673, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 1}
+    CSize: 694.035889
+    COrtho: 1
+  - OReference: {fileID: 11500000, guid: 22d4abe6531c35c4bba95af0535daad2, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 88562764}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 278053867}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1447141050}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 11500000, guid: 6b6bc321b6e30a5429aa53455aaac1ff, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 0acbec796374b664d80fc5f900bcef7a, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: e42389bc015a06a4ead36de8da5f9cdc, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 833ef2e234275eb41bd8e5f4aa770f61, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1447141050}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 7043e901362d5ad40b416f0d463d8e9b, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 467883199}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 11500000, guid: 7ba07c1d43ef0d147b9c59d17372ba75, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1849351329}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1861845426}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 0
+    CPosition: {x: 608, y: 311.5, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 233.345245
+    COrtho: 0
+  - OReference: {fileID: 467883199}
+    OType: 0
+    CPosition: {x: 608, y: 311.5, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 233.345245
+    COrtho: 0
+  - OReference: {fileID: 1946275538}
+    OType: 0
+    CPosition: {x: 608, y: 311.5, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 233.345245
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 41d1941b4003bb042b5b8cb7ba2cd17b, type: 3}
+    OType: 0
+    CPosition: {x: 608, y: 311.5, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 233.345245
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 77768964}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 1946275538}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: d70895452eaf5a34f9d96839767096b7, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: ef070f17a587a644b97da44e66ab2376, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 1c08e1790dc550a49acd5fd61c37f019, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 6ac2a70f52cc38b4b9e515aa31f1b619, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 285034a49d5baca49bf648570235abce, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 77768964}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 1027311616}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: af30530b87f5ac043b6be6d46406bdc8, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: db1e5994e69975c4faf22381d8c52368, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 5fe3bea3c74a53d499395cf04dbae51a, type: 3}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 1027311616}
+    OType: 0
+    CPosition: {x: 485.929688, y: 305.635101, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 642.204773
+    COrtho: 0
+  - OReference: {fileID: 278053867}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1861845426}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1027311616}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 77768964}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1946275538}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1861845426}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 5902b9ad78de8d44ea4c898ba51f9c2b, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 659312ef3aa80bf4c9e80b2de2f2b622, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1861845426}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: b1e6dff3a64eff54fb6fa5d740ac8c8c, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2129296295}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1153123588}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 20fc4f0540e98074d8900660e4e30e27, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1153123588}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 315569839}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 88188a2afcef3794c8658d8f1619ab43, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 468809793}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1660917861}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: ea12af76814e1d440aff4b3b2871352f, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: a08fed0286453074e8129e48c15b866a, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 428e89fed2bc5d74ba324f4a457f032e, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 88188a2afcef3794c8658d8f1619ab43, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: d86ddabfb53a51548aaf773ad30c3460, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1660917861}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 0828b75ccc96cee4e9c6022936c17d2b, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 5c0c31cf1f02a5e45936087f791ab887, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1088510001}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 315569839}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 8acc0fc29e73fa94c93a54772689ac79, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: f7abc6a22d3c0bf43bdeb42f07905f27, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 315569839}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 463407793}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 612697024}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 463407793}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: f7abc6a22d3c0bf43bdeb42f07905f27, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: d86ddabfb53a51548aaf773ad30c3460, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 88188a2afcef3794c8658d8f1619ab43, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 428e89fed2bc5d74ba324f4a457f032e, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 0828b75ccc96cee4e9c6022936c17d2b, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: e7e24b3bdf13fd14cb39150ca961da39, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: 2723c5fccfea8224da7ef01df7c76eb8, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 463407793}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 612697024}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1014789556}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 468809793}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1745318871}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1660917861}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1088510001}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 336737480}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1302997730}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1001629865}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1446134743}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 159749658}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 453032133}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1255250804}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: c2737909a0c9781479920e6729451a21, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 2800000, guid: a2e8a546a6b2c334ab2f2c6646095a41, type: 3}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1255250804}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 523761574}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 56516406}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1083084944}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1591480034}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 0
+    COrtho: 0
+  - OReference: {fileID: 1399841505}
+    OType: 0
+    CPosition: {x: 765.343018, y: 356.886566, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 386.075653
+    COrtho: 0
+  - OReference: {fileID: 145137013}
+    OType: 0
+    CPosition: {x: 765.343018, y: 356.886566, z: 0}
+    CRotation: {x: 0, y: 0, z: 0, w: 0}
+    CSize: 386.075653
+    COrtho: 0
+  - OReference: {fileID: 1160197850}
+    OType: 0
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641402, y: .120440133, z: -.030240763, w: -.962387204}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 992386432}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1326719921}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1452855589}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1196158424}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 858122498}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 333231361}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2139086156}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2132021745}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1564297840}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1633504886}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1921697523}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2106032831}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 514051203}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2051820029}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2086426342}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 833933046}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 184692434}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1375074595}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 668409217}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 58717791}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 166251170}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 338034982}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1211835226}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1503372470}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1376318387}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1227929277}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 422610225}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 304790774}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1353590635}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2050240973}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1849351329}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 971985582}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1790297687}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 473777696}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1447141050}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 467883199}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1946275538}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 467883199}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1447141050}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 473777696}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1790297687}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 971985582}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 315569839}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 463407793}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 612697024}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1014789556}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 468809793}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1745318871}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1660917861}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1088510001}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1302997730}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 336737480}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1001629865}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1302997730}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1088510001}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1660917861}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1745318871}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 468809793}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1014789556}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 612697024}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 463407793}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 315569839}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1153123588}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2129296295}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1861845426}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1027311616}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 77768964}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1946275538}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1016966702}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 467883199}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1447141050}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 473777696}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1790297687}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 971985582}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1849351329}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2050240973}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 304790774}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 422610225}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1227929277}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1376318387}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1211835226}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1915644253}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 338034982}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 166251170}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 58717791}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 750743500}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 668409217}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1375074595}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 184692434}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 833933046}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2086426342}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2051820029}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 514051203}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2106032831}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1921697523}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2132021745}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1633504886}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1564297840}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2132021745}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 2139086156}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 333231361}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 858122498}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1196158424}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1452855589}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 56516406}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1302997730}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1001629865}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1446134743}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 159749658}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 453032133}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1083084944}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1255250804}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 56516406}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1083084944}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  - OReference: {fileID: 1399841505}
+    OType: 2
+    CPosition: {x: 0, y: 0, z: 0}
+    CRotation: {x: -.241641417, y: .120440133, z: -.030240763, w: -.962387264}
+    CSize: 10667.3438
+    COrtho: 0
+  Forward: []
+--- !u!4 &1123224289
+Transform:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123224287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &1153123588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1153123589}
+  - 114: {fileID: 1153123590}
+  m_Layer: 0
+  m_Name: Sniper Beam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153123589
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1153123588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 11
+--- !u!114 &1153123590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1153123588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: addd79f0b10d19743a9275fa459d49bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponSniperBeam
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 20fc4f0540e98074d8900660e4e30e27, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: 1c08e1790dc550a49acd5fd61c37f019, type: 3}
+  m_AreaOfEffectRange: .5
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 8
+  m_Description: Sniper Beam
+  m_EnergyCost: 1
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 30
+  m_FireMinRange: 1
+  m_FriendlyName: Sniper Beam
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 1
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 15
+  m_OrbitMinRange: 5
+  m_ProjectileLifetime: 10
+  m_ProjectileSpeed: 30
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 0fc8936ede4d4c94cbc04ad25b442ebf, type: 3}
+  - {fileID: 8300000, guid: deb31dbb1a26c054891a4186c584a5d0, type: 3}
+  m_BeamPrefab: {fileID: 100000, guid: 7e7d3839ff48f4b4eac88927ed626d73, type: 2}
+  m_ImpactPrefab: {fileID: 100004, guid: 2a9a1a1613f88dc44930535287de69b0, type: 2}
+--- !u!1 &1160197850
+GameObject:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1160197851}
+  m_Layer: 0
+  m_Name: Items Ship Modifications
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160197851
+Transform:
+  m_ObjectHideFlags: 8
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160197850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 315569840}
+  - {fileID: 463407794}
+  - {fileID: 612697025}
+  - {fileID: 1014789557}
+  - {fileID: 468809794}
+  - {fileID: 1745318872}
+  - {fileID: 1660917862}
+  - {fileID: 1088510002}
+  m_Father: {fileID: 1918568127}
+  m_RootOrder: 2
+--- !u!1 &1196158424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1196158425}
+  - 114: {fileID: 1196158426}
+  m_Layer: 0
+  m_Name: Imperial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1196158425
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196158424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 1
+--- !u!114 &1196158426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196158424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionImperial
+  m_DisplayName: Imperial
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.imperials.standing
+  m_DefaultReputation: 0
+  m_GreatRelations:
+  - {fileID: 2132021747}
+  m_GoodRelations:
+  - {fileID: 858122500}
+  m_PoorRelations: []
+  m_TerribleRelations:
+  - {fileID: 2139086158}
+  - {fileID: 1564297842}
+--- !u!1 &1211835226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1211835227}
+  - 114: {fileID: 1211835228}
+  m_Layer: 0
+  m_Name: Small Transport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211835227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211835226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 11
+--- !u!114 &1211835228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1211835226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionSmallTransport
+  m_BodyPrefab: {fileID: 100004, guid: 381e3ed780930614cbd4ec654bbe1d10, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Small Transport
+  m_ShortDisplayName: Transport (S)
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1227929277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1227929278}
+  - 114: {fileID: 1227929279}
+  m_Layer: 0
+  m_Name: Transport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227929278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227929277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 14
+--- !u!114 &1227929279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227929277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionTransport
+  m_BodyPrefab: {fileID: 100002, guid: b4d2ffebf11047c45a2905a1a23545b8, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Transport
+  m_ShortDisplayName: Transport
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1255250804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1255250805}
+  - 114: {fileID: 1255250806}
+  m_Layer: 0
+  m_Name: Governor Free Space Station
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255250805
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255250804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 6
+--- !u!114 &1255250806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255250804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kGovernorFreeSpaceStation
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: a2e8a546a6b2c334ab2f2c6646095a41, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Governor Free Space Station
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Governor Free Space Station
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &1302997730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1302997731}
+  - 114: {fileID: 1302997732}
+  m_Layer: 0
+  m_Name: Soldier Damage Increase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302997731
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302997730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 1
+--- !u!114 &1302997732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302997730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kSoldierDamageIncrease
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 2723c5fccfea8224da7ef01df7c76eb8, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Soldier Damage Increase
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Soldier Damage Increase
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &1326719921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1326719922}
+  m_Layer: 0
+  m_Name: Factions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326719922
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326719921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1452855590}
+  - {fileID: 1196158425}
+  - {fileID: 858122499}
+  - {fileID: 333231362}
+  - {fileID: 2139086157}
+  - {fileID: 2132021746}
+  - {fileID: 1564297841}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 0
+--- !u!1 &1353590635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1353590636}
+  m_Layer: 0
+  m_Name: Quest Definitions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353590636
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353590635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2050240974}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 3
+--- !u!1 &1375074595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1375074596}
+  - 114: {fileID: 1375074597}
+  m_Layer: 0
+  m_Name: Fuel Transport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375074596
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1375074595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 4
+--- !u!114 &1375074597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1375074595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionFuelTransport
+  m_BodyPrefab: {fileID: 100004, guid: 478ba631c3346cc4bba3cdbfa1cb87d3, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Fuel Transport
+  m_ShortDisplayName: Fuel Trans.
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1376318387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1376318388}
+  - 114: {fileID: 1376318389}
+  m_Layer: 0
+  m_Name: Superiority Fighter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376318388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1376318387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 13
+--- !u!114 &1376318389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1376318387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionSuperiorityFighter
+  m_BodyPrefab: {fileID: 100004, guid: b03888f8310acf7468a73ca49d6bbe51, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Superiority Fighter
+  m_ShortDisplayName: Sup Fighter
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1399841505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1399841506}
+  - 114: {fileID: 1399841507}
+  m_Layer: 0
+  m_Name: Player Avatar Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399841506
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399841505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1918568127}
+  m_RootOrder: 4
+--- !u!114 &1399841507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399841505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPlayerAvatarLocation
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 046401ec1b1ddf74f9eb9f0c8ee5a9a4, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Player Avatar Location
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Player Avatar Location
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1446134743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1446134744}
+  - 114: {fileID: 1446134745}
+  m_Layer: 0
+  m_Name: Pilot Free Ship Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1446134744
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446134743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88562765}
+  m_RootOrder: 3
+--- !u!114 &1446134745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446134743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPilotFreeShipQuest
+  m_Weight: 0
+  m_InventorySprite: {fileID: 21300000, guid: 8acc0fc29e73fa94c93a54772689ac79, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Pilot Free Ship Quest
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Pilot Free Ship Quest
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 1
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 0
+  m_CanBeAddedToGlobal: 1
+--- !u!1 &1447141050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1447141051}
+  - 114: {fileID: 1447141052}
+  m_Layer: 0
+  m_Name: Vulcan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1447141051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447141050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 3
+--- !u!114 &1447141052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447141050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0422fafd09738d44da2888fca0dcdff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponVulcan
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 833ef2e234275eb41bd8e5f4aa770f61, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: 0acbec796374b664d80fc5f900bcef7a, type: 3}
+  m_AreaOfEffectRange: .5
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 8
+  m_Description: The vulcan chain gun. Still effective at making those pests think
+    twice."
+  m_EnergyCost: 1
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 30
+  m_FireMinRange: 1
+  m_FriendlyName: Vulcan
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: .200000003
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 15
+  m_OrbitMinRange: 1.63403904
+  m_ProjectileLifetime: 5
+  m_ProjectileSpeed: 30
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 14ba2f7d17b7a434f851c648484e0806, type: 3}
+  m_ProjectilePrefab: {fileID: 100000, guid: 48bd3d98394152049bb7a4c80720432b, type: 2}
+  m_ImpactPrefab: {fileID: 100000, guid: ff494f22bafa2954bb31ffa9fbdcf2fa, type: 2}
+  m_MuzzlePrefab: {fileID: 100002, guid: 3511b55febca0084f9a14e1dcb57a884, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &1452855589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1452855590}
+  - 114: {fileID: 1452855591}
+  m_Layer: 0
+  m_Name: Neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452855590
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452855589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 0
+--- !u!114 &1452855591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452855589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionNeutral
+  m_DisplayName: Neutral
+  m_IsHardNeutral: 1
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.neutral.standing
+  m_DefaultReputation: 0
+  m_GreatRelations: []
+  m_GoodRelations: []
+  m_PoorRelations: []
+  m_TerribleRelations: []
+--- !u!1 &1503372470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1503372471}
+  - 114: {fileID: 1503372472}
+  m_Layer: 0
+  m_Name: Stealth Recon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503372471
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503372470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 12
+--- !u!114 &1503372472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503372470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionStealthRecon
+  m_BodyPrefab: {fileID: 100008, guid: 26a13fc59b654a2448f2619712677a83, type: 2}
+  m_DefaultSensorRange: 10
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Stealth Recon
+  m_ShortDisplayName: Stealth R.
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 200
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 50000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1547689400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1547689402}
+  - 114: {fileID: 1547689401}
+  m_Layer: 0
+  m_Name: FG_GameObjectGUIDs
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1547689401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547689400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f578e03eade124e98c65ad4bbda897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guids:
+  - d9629c86-0b28-456b-bbb3-42a784f0bb2e
+  - fdd2bd0a-0e09-406c-a8b7-fd278d4c5b92
+  - 86fed2d9-8a94-42ad-b04c-cdd2b3f0d021
+  - 7990a0d7-e201-4b7b-984a-287e2091237a
+  - 9c9fcc30-06d7-4703-9c94-d1fe8826b078
+  - 4ec19a4f-05ae-4cdf-907f-00807fadcd99
+  - f9e329db-ea31-4dba-b03c-5c4456e337c8
+  - 915fa543-4e33-4f2a-acc3-07faa422240a
+  - 78859fdb-9f3e-4087-b240-9c9df833ceb7
+  - a884d5d3-b73d-4107-9ccb-50b835366723
+  - 0d8b76fe-26b7-4be8-9146-c7ef6728d1f8
+  objects:
+  - {fileID: 1591480034}
+  - {fileID: 1918568126}
+  - {fileID: 1353590635}
+  - {fileID: 1633504886}
+  - {fileID: 1326719921}
+  - {fileID: 1690411221}
+  - {fileID: 992386432}
+  - {fileID: 145137013}
+  - {fileID: 278053867}
+  - {fileID: 1160197850}
+  - {fileID: 88562764}
+--- !u!4 &1547689402
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547689400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &1564297840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1564297841}
+  - 114: {fileID: 1564297842}
+  m_Layer: 0
+  m_Name: Free Trade Coalition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564297841
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564297840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 6
+--- !u!114 &1564297842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564297840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionFreeTradeCoalition
+  m_DisplayName: Free Trade Coalition
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.ftc.standing
+  m_DefaultReputation: -100
+  m_GreatRelations: []
+  m_GoodRelations: []
+  m_PoorRelations:
+  - {fileID: 858122500}
+  m_TerribleRelations:
+  - {fileID: 1196158426}
+  - {fileID: 2139086158}
+  - {fileID: 2132021747}
+--- !u!1 &1591480034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1591480035}
+  m_Layer: 0
+  m_Name: Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1591480035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1591480034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1679382218}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 5
+--- !u!1 &1633504886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1633504887}
+  m_Layer: 0
+  m_Name: Planetary Systems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633504887
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633504886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1921697524}
+  - {fileID: 2106032832}
+  - {fileID: 514051204}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 1
+--- !u!1 &1660917861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1660917862}
+  - 114: {fileID: 1660917863}
+  m_Layer: 0
+  m_Name: Health Capacity Increase (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660917862
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660917861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 6
+--- !u!114 &1660917863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660917861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationHealthCapacityIncreaseSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: d86ddabfb53a51548aaf773ad30c3460, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Health Capacity Increase (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Health Capacity Increase (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 50
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 1
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1679382217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1679382218}
+  - 114: {fileID: 1679382219}
+  m_Layer: 0
+  m_Name: kDialogueTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679382218
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679382217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1591480035}
+  m_RootOrder: 0
+--- !u!114 &1679382219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679382217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2039b1795d3f2f844ad6cc5a61dc7f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: 
+--- !u!1 &1690411221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1690411222}
+  m_Layer: 0
+  m_Name: Dynamic Agent Definitions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1690411222
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690411221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2051820030}
+  - {fileID: 2086426343}
+  - {fileID: 833933047}
+  - {fileID: 184692435}
+  - {fileID: 1375074596}
+  - {fileID: 668409218}
+  - {fileID: 750743501}
+  - {fileID: 58717792}
+  - {fileID: 166251171}
+  - {fileID: 338034983}
+  - {fileID: 1915644254}
+  - {fileID: 1211835227}
+  - {fileID: 1503372471}
+  - {fileID: 1376318388}
+  - {fileID: 1227929278}
+  - {fileID: 422610226}
+  - {fileID: 304790775}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 2
+--- !u!1 &1745318871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1745318872}
+  - 114: {fileID: 1745318873}
+  m_Layer: 0
+  m_Name: Health Recharge Rate (Small)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1745318872
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745318871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1160197851}
+  m_RootOrder: 5
+--- !u!114 &1745318873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kShipModificationHealthRechargeRateSmall
+  m_Weight: 10
+  m_InventorySprite: {fileID: 21300000, guid: d86ddabfb53a51548aaf773ad30c3460, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 50
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Health Recharge Rate (Small)
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Health Recharge Rate (Small)
+  m_TooltipText: 
+  m_HealthRechargeModifier: 5
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 1
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1790297687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1790297688}
+  - 114: {fileID: 1790297689}
+  m_Layer: 0
+  m_Name: Medium Blaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790297688
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790297687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 1
+--- !u!114 &1790297689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790297687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34895a36ce175844a46377d927be136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponMediumBlaster
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 264835eab647e7649b19e24696c25bce, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: da7a05e46fd1a74419d2d36eeddd82fc, type: 3}
+  m_AreaOfEffectRange: 1
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 0
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 12
+  m_Description: Medium Blaster
+  m_EnergyCost: 15
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 30
+  m_FireMinRange: 1
+  m_FriendlyName: Medium Blaster
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 1
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 25
+  m_OrbitMinRange: 5
+  m_ProjectileLifetime: 15
+  m_ProjectileSpeed: 15
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: fdc5a76de38b6bb43841c36306adf702, type: 3}
+  m_ProjectilePrefab: {fileID: 100004, guid: 43bb5743709b85245b9a5e3742259a88, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &1849351329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1849351330}
+  - 114: {fileID: 1849351331}
+  m_Layer: 0
+  m_Name: Iron Ore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849351330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849351329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145137014}
+  m_RootOrder: 0
+--- !u!114 &1849351331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849351329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd74e4710caf3a488d61b6298d4bbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kCargoIronOre
+  m_Weight: 20
+  m_InventorySprite: {fileID: 21300000, guid: 8557831d924747140b701fa44e0f0a3a, type: 3}
+  m_ActionSprite: {fileID: 0}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 0
+  m_CanBeSold: 0
+  m_CanTarget: 0
+  m_CanToggle: 0
+  m_Cost: 10
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: Iron Ore
+  m_EnergyCost: 0
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 0
+  m_FireMinRange: 0
+  m_FriendlyName: Iron Ore
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 0
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 0
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1861845426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1861845427}
+  - 114: {fileID: 1861845428}
+  m_Layer: 0
+  m_Name: Particle Cannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1861845427
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1861845426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 9
+--- !u!114 &1861845428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1861845426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d25a7e5f77b4854bac3fccc78753842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponParticleCannon
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 659312ef3aa80bf4c9e80b2de2f2b622, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: 5902b9ad78de8d44ea4c898ba51f9c2b, type: 3}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 15
+  m_Description: Lasers! Like those old movies, but in real life.
+  m_EnergyCost: 30
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 5
+  m_FireMinRange: 1
+  m_FriendlyName: Particle Cannon
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 3.5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 1
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &1915644253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1915644254}
+  - 114: {fileID: 1915644255}
+  m_Layer: 0
+  m_Name: Repair Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915644254
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915644253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 10
+--- !u!114 &1915644255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915644253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionRepairShip
+  m_BodyPrefab: {fileID: 100004, guid: 6bb57e159e2b34e4b8db823f39c81d60, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Repair Ship
+  m_ShortDisplayName: Repair
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 100
+  m_WeaponSlots: 2
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &1918568126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1918568127}
+  m_Layer: 0
+  m_Name: Item Definitions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1918568127
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1918568126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 145137014}
+  - {fileID: 278053868}
+  - {fileID: 1160197851}
+  - {fileID: 88562765}
+  - {fileID: 1399841506}
+  m_Father: {fileID: 992386433}
+  m_RootOrder: 4
+--- !u!1 &1921697523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1921697524}
+  - 114: {fileID: 1921697525}
+  m_Layer: 0
+  m_Name: Sol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921697524
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921697523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1633504887}
+  m_RootOrder: 0
+--- !u!114 &1921697525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921697523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89666f6d3c4bb524fa59e82a4deb4c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPlanetarySystemSol
+  m_SceneName: Level - Sol
+  m_DisplayName: Sol
+  m_HomeFaction: {fileID: 1196158426}
+--- !u!1 &1946275538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1946275539}
+  - 114: {fileID: 1946275540}
+  m_Layer: 0
+  m_Name: Solo Gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946275539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946275538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 6
+--- !u!114 &1946275540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1946275538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6144c44b9242b48bfc5bee10d568bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponSoloGun
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: ce4a0aebe95af62468680c02a449e4ac, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: af019840f42820846b92aeae75d4c12a, type: 3}
+  m_AreaOfEffectRange: .5
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 8
+  m_Description: Solo Gun
+  m_EnergyCost: 1
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 30
+  m_FireMinRange: 1
+  m_FriendlyName: Solo Gun
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: 1
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 15
+  m_OrbitMinRange: 5
+  m_ProjectileLifetime: 10
+  m_ProjectileSpeed: 30
+  m_RequiresLineOfSight: 1
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: .0500000007
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 2
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+  m_FiringAudioClips:
+  - {fileID: 8300000, guid: 81a346a7999a81243b8e6e18df6852ef, type: 3}
+  - {fileID: 8300000, guid: 58a24ee7c3371ff49bb6833b316f040a, type: 3}
+  - {fileID: 8300000, guid: b3325a8b2aa1db6408262e058666a0e2, type: 3}
+  - {fileID: 8300000, guid: 7c9ba602437be9b4f9271fb55179b1b0, type: 3}
+  m_ImpactPrefab: {fileID: 100004, guid: 2e9826bbd6160d048a70c38de25dd931, type: 2}
+  m_ProjectilePrefab: {fileID: 100012, guid: 7735ef166068fc04a84ed04e81115ab3, type: 2}
+  m_AudioOnImpact:
+  - {fileID: 8300000, guid: ac0b41b71f9f4bf42b13177f25697dba, type: 3}
+--- !u!1 &2050240973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2050240974}
+  - 114: {fileID: 2050240975}
+  m_Layer: 0
+  m_Name: Local Random Fedex Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2050240974
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050240973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1353590636}
+  m_RootOrder: 0
+--- !u!114 &2050240975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050240973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8fd71edcf4396489cc6ef7d008b5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: 
+  m_Objectives: []
+  m_CompletedObjectives: []
+  m_MessageBoeyPrefab: {fileID: 100000, guid: b5bce5d70af112f4db44c981e10e23af, type: 2}
+--- !u!1 &2051820029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2051820030}
+  - 114: {fileID: 2051820031}
+  m_Layer: 0
+  m_Name: Bomber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2051820030
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051820029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 0
+--- !u!114 &2051820031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2051820029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionBomber
+  m_BodyPrefab: {fileID: 100008, guid: 8a375a13db2b9d34aa78c9d41f2ca195, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Bomber
+  m_ShortDisplayName: Bomber
+  m_HealthMaxBase: 150
+  m_HealthRechargeBase: 1
+  m_EnergyMaxBase: 150
+  m_EnergyRechargeBase: 10
+  m_ShieldMaxBase: 150
+  m_ShieldRechargeBase: 4
+  m_WeightMaxBase: 150
+  m_WeaponSlots: 4
+  m_MoveSpeedBase: 10
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &2086426342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2086426343}
+  - 114: {fileID: 2086426344}
+  m_Layer: 0
+  m_Name: Command Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086426343
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086426342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1690411222}
+  m_RootOrder: 1
+--- !u!114 &2086426344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086426342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6f9ddd7446555428f595da5d209250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kDynamicAgentDefinitionCommandShip
+  m_BodyPrefab: {fileID: 100008, guid: 30fe682738efa334d8b6a284ef582cc8, type: 2}
+  m_DefaultSensorRange: 5
+  m_AudioOnSelect: []
+  m_AudioOnBreakup:
+  - {fileID: 8300000, guid: 877ddfc1f76b1b740ba2d381ba27066a, type: 3}
+  m_AudioOnExplode:
+  - {fileID: 8300000, guid: 42ca73bd378a90d4794348455de141e2, type: 3}
+  m_StoreDescription: A generic store description.
+  m_DisplayName: Command Ship
+  m_ShortDisplayName: Cmd Ship
+  m_HealthMaxBase: 100
+  m_HealthRechargeBase: 0
+  m_EnergyMaxBase: 100
+  m_EnergyRechargeBase: 5
+  m_ShieldMaxBase: 100
+  m_ShieldRechargeBase: 2
+  m_WeightMaxBase: 500
+  m_WeaponSlots: 10
+  m_MoveSpeedBase: 20
+  m_CostBase: 1000
+  m_ExplosionEffectPrefab: {fileID: 100000, guid: fe05168ed358b8d4585e7aa0ba4b9225,
+    type: 2}
+--- !u!1 &2106032831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2106032832}
+  - 114: {fileID: 2106032833}
+  m_Layer: 0
+  m_Name: Tau Ceti
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2106032832
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106032831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1633504887}
+  m_RootOrder: 1
+--- !u!114 &2106032833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106032831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89666f6d3c4bb524fa59e82a4deb4c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kPlanetarySystemTauCeti
+  m_SceneName: Level - Tau Ceti
+  m_DisplayName: Tau Ceti
+  m_HomeFaction: {fileID: 1564297842}
+--- !u!1 &2129296295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2129296296}
+  - 114: {fileID: 2129296297}
+  m_Layer: 0
+  m_Name: Quad Light Blaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129296296
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2129296295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 278053868}
+  m_RootOrder: 10
+--- !u!114 &2129296297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2129296295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a080e177e52ef5243a3f9e1a503c6868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kWeaponQuadLightBlaster
+  m_Weight: 50
+  m_InventorySprite: {fileID: 21300000, guid: 4bed9d92800ca954298926bbb7bb8d6c, type: 3}
+  m_ActionSprite: {fileID: 21300000, guid: 22c24ef1ddb3291438cb4d1cc39c1342, type: 3}
+  m_AreaOfEffectRange: 0
+  m_CanActivate: 1
+  m_CanBeSold: 1
+  m_CanTarget: 0
+  m_CanToggle: 1
+  m_Cost: 500
+  m_CreditsPerSecondModifier: 0
+  m_Damage: 0
+  m_Description: This automated system attempts to lock on to hostile projectiles
+    and shoot them out of the sky.
+  m_EnergyCost: .0500000007
+  m_EnergyCostsMultiplier: 1
+  m_EnergyRechargeModifier: 0
+  m_FireMaxRange: 60
+  m_FireMinRange: 0
+  m_FriendlyName: Quad Light Blaster
+  m_TooltipText: 
+  m_HealthRechargeModifier: 0
+  m_IsClassItem: 0
+  m_MaxChannelTime: 0
+  m_MaxCooldownTime: .5
+  m_MaxEnergyModifier: 0
+  m_MaxHealthModifier: 0
+  m_MaxSensorRangeModifier: 0
+  m_MaxShieldModifier: 0
+  m_MaxSpeedModifier: 0
+  m_OrbitMaxRange: 0
+  m_OrbitMinRange: 0
+  m_ProjectileLifetime: 0
+  m_ProjectileSpeed: 0
+  m_RequiresLineOfSight: 0
+  m_ShieldRechargeModifier: 0
+  m_StorePriceMultiplier: 1
+  m_TargetDetonateRange: 0
+  m_DoTargetSelectFirst: 0
+  m_AttackType: 0
+  m_CanBeAddedToSensors: 0
+  m_CanBeAddedToEngines: 0
+  m_CanBeAddedToEnergy: 0
+  m_CanBeAddedToHealth: 0
+  m_CanBeAddedToShield: 0
+  m_CanBeAddedToWeapons: 1
+  m_CanBeAddedToCargo: 1
+  m_CanBeAddedToGlobal: 0
+--- !u!1 &2132021745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2132021746}
+  - 114: {fileID: 2132021747}
+  m_Layer: 0
+  m_Name: Trader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2132021746
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132021745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 5
+--- !u!114 &2132021747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132021745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionTrader
+  m_DisplayName: Trader
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.trader.standing
+  m_DefaultReputation: 0
+  m_GreatRelations:
+  - {fileID: 1196158426}
+  m_GoodRelations: []
+  m_PoorRelations: []
+  m_TerribleRelations:
+  - {fileID: 1564297842}
+--- !u!1 &2139086156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2139086157}
+  - 114: {fileID: 2139086158}
+  m_Layer: 0
+  m_Name: Rebels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2139086157
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2139086156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1326719922}
+  m_RootOrder: 4
+--- !u!114 &2139086158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2139086156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf425313ec2fa4cb112d16463f4d81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 0
+  m_UniqueName: kFactionRebels
+  m_DisplayName: Rebels
+  m_IsHardNeutral: 0
+  m_IsPlayerFaction: 0
+  m_PlayerReputationKey: faction.rebels.standing
+  m_DefaultReputation: 0
+  m_GreatRelations:
+  - {fileID: 2132021747}
+  m_GoodRelations:
+  - {fileID: 858122500}
+  m_PoorRelations: []
+  m_TerribleRelations:
+  - {fileID: 1564297842}
+  - {fileID: 1196158426}
